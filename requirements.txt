@@ -1,0 +1,18 @@
+# 舞台灯光出图工具链 —— Python 依赖
+# 安装： pip3 install -r requirements.txt
+
+ezdxf>=1.0          # DXF 读写与渲染（核心）
+PyYAML>=6.0         # 读 data/rig.yaml
+matplotlib>=3.5     # 把 DXF 渲染成 PDF/PNG 预览
+
+# --- 真实灯具符号（从 GDTF 提取）---
+trimesh>=4.0        # 读 GLB 三维网格
+pygltflib>=1.16     # GLB 解析后端
+scikit-image>=0.22  # 网格投影后的轮廓提取
+svgelements>=1.9    # 解析厂家 SVG（含 Path/Arc 展开）
+cairosvg>=2.7       # SVG 光栅化（预览用）
+Pillow>=10.0        # 栅格化与预览图
+numpy>=1.24         # 几何运算
+
+# --- 复核 ---
+pymupdf>=1.24       # 重新打开 PDF 校验尺寸

@@ -1,0 +1,76 @@
+# ============================================================
+#  灯具库清单 —— 真实 GDTF 来源
+# ============================================================
+#  每个条目指向一个真实厂家 GDTF 文件。
+#  符号从 GDTF 提取，不手画。提取逻辑见 src/gdtf_symbol.py
+#
+#  来源：gdtf-lights.com 的公开 catalog API（无需登录）
+#        https://gdtf-lights.com/catalog-api.php?action=product&slug=<slug>
+#
+#  运行：
+#     python3 src/gdtf_fetch.py          # 下载所有 .gdtf 到 data/gdtf/
+#     python3 src/gdtf_symbol.py --build # 提取符号 → data/symbols.json
+#
+#  ------------------------------------------------------------
+#  提取策略（按优先级，自动降级）：
+#    A. models/svg/<Model.File>.svg   —— 厂家提供的 1:1 矢量符号（最准）
+#       会校验"真符号"：排除只有圆圈+十字的占位符
+#    B. models/gltf/*.glb             —— 三维网格俯视投影 → 轮廓 → RDP 简化
+#       这是 100% 可靠的后备，因为 GDTF 几乎总带 GLB
+#    C. 失败则报错停止，绝不退回手画
+#  ------------------------------------------------------------
+
+meta:
+  source: gdtf-lights.com
+  api: https://gdtf-lights.com/catalog-api.php
+  note: >
+    实测 98 个厂家中只有 3 个提供 models/svg/，且部分为占位符。
+    因此 GLB 投影是主力路径，SVG 优先仅在有真符号时生效。
+
+# 每种灯具选一个真实型号。
+# key 与 data/rig.yaml 的 types 键对应。
+fixtures:
+
+  profile:
+    name: ETC Source Four LED Series 3 Lustr X8 19°
+    manufacturer: ETC
+    gdtf: /gdtf/ETC_S4_Series_3_Lustr_X8_19Deg_61818.gdtf
+    slug: etc-s4-series-3-lustr-x8-19deg
+    model_files:            # GDTF 内 Model/@File，用于找对应 SVG
+      - S4S319Deg
+      - S4S3-26-36Deg
+    note: 真实尺寸 260 × 719 × 270 mm（含吊架），来自 GLB 包围盒
+
+  fresnel:
+    name: Chauvet Professional Ovation F-415FC
+    manufacturer: Chauvet Professional
+    gdtf: /gdtf/Chauvet_Professional_Ovation_F-415FC_86179.gdtf
+    slug: chauvet-professional-ovation-f-415fc
+
+  par:
+    name: Chauvet Professional COLORado 1 Solo
+    manufacturer: Chauvet Professional
+    gdtf: /gdtf/Chauvet_Professional_COLORado_1_Solo_97408.gdtf
+    slug: chauvet-professional-colorado-1-solo
+
+  led:
+    name: Martin Professional MAC Aura XIP
+    manufacturer: Martin Professional
+    gdtf: /gdtf/Martin_Professional_MAC_Aura_XIP_159072.gdtf
+    slug: martin-professional-mac-aura-xip
+
+  mover:
+    name: Martin Professional MAC Aura XIP
+    manufacturer: Martin Professional
+    gdtf: /gdtf/Martin_Professional_MAC_Aura_XIP_159072.gdtf
+    slug: martin-professional-mac-aura-xip
+
+  follow:
+    name: Robert Juliat Arthur LT
+    manufacturer: Robert Juliat
+    gdtf: /gdtf/Robert_Juliat_Arthur_LT_65901.gdtf
+    slug: robert-juliat-arthur-lt
+
+  practical:
+    # 实用光源按 USITT RP-2 §6.9 画三角形（规范符号，非厂家产品）
+    usitt: practical

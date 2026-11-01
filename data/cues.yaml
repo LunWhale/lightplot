@@ -1,0 +1,293 @@
+# ============================================================
+# CUE SHEET — DEATH OF A SALESMAN
+#
+# HONESTY NOTE (must stay, same as rig.yaml)
+#   Fixtures / gels / channels all come from data/rig.yaml, which is
+#   FABRICATED venue data. Cue points follow the action and dialogue of
+#   Arthur Miller's play, but:
+#     - page numbers depend on the edition used in rehearsal
+#       (Penguin / Dramatists Play Service paginate differently)
+#     - so the Pg column is left empty and filled in at the read-through
+#   `verified: false` means cue points have NOT been checked line-by-line
+#   against the production script. Do not take this to a performance.
+#
+# Numbering: continuous through the whole play, prefix LX (LX = Electrics).
+#   Pre-show state is Q0.5. Insert new cues as decimals (Q4.5).
+#   NEVER renumber — the prompt copy already carries these numbers.
+# ============================================================
+
+meta:
+  numbering: "Continuous through the play, prefix LX"
+  prefix: LX
+  script_edition: ""        # fill at rehearsal: publisher + edition + ISBN
+  verified: false
+
+cues:
+
+# ------------------------------------------------------------ ACT 1
+- q: "0.5"
+  act: "A1 / pre-show"
+  cue_point: "House open. Audience entering, preset in place."
+  state: >
+    House at full. On stage only a very narrow cold edge on the back wall;
+    the floor is dark and the furniture reads as silhouette. What the
+    audience walks into is a house that has not woken up yet.
+  lanterns: "401-404 (OPEN) @12%"
+  fade: "-"
+  notes: >
+    Preset check: 902 table lamp out, 901 fridge out.
+    Final focus check 15 minutes before the half.
+
+- q: "1"
+  act: "A1 / 1"
+  cue_point: "Willy enters through the back door carrying two large sample cases and sets them down."
+  state: >
+    Almost total darkness. Only the cold edge on the back wall and a thin
+    wash from F1-F2 on the door frame, enough to register that someone has
+    come in, not enough to see a face. One of the darkest pictures in the play.
+  lanterns: "401-404 (OPEN) @18%, 101-102 (L201) @12%"
+  fade: "Up 4s / Down 2s"
+  notes: >
+    Must be almost silent. The light must not welcome him — he has not come
+    home with any dignity. The light arrives a beat after he does.
+
+- q: "2"
+  act: "A1 / 1"
+  cue_point: "Linda gets up and switches on the kitchen light: \"Willy! It's all right, I'll go down-\""
+  state: >
+    Kitchen zone (K1) warms, L132 leading; F1-F2 come up enough to read both
+    faces. Everything else stays cold. The first warmth in the play — small,
+    cramped, domestic.
+  lanterns: "201-202 (L132) @48%, 101-102 (L201) @45%"
+  fade: "Up 6s"
+  notes: >
+    This cue states the whole design. Warm always means looked-after; cold
+    always means out there in the world. Every later shift grows from this line.
+
+- q: "3"
+  act: "A1 / 1"
+  cue_point: "Willy sits down: \"I'm tired to the death.\""
+  state: >
+    K1 drops to 35%. F1-F2 fall to 25% and hand over to the booms, so his
+    face goes half-lit. Cold from 301-304 starts bleeding into the mid area.
+  lanterns: "201-202 (L132) @35%, 501-503 (L119) @30%, 301-304 (L201) @18%, 801 (OPEN) @40% narrow"
+  fade: "X-fade 8s"
+  notes: >
+    Nothing bright may happen after this line. First time the audience feels
+    him going. 801 picks him up here and holds his face, iris down to minimum —
+    he does not move, but the eye must be pinned to him.
+
+- q: "4"
+  act: "A1 / 1"
+  cue_point: "Willy's monologue: \"Biff Loman is lost. In the greatest country in the world a young man with such personal attractiveness gets lost.\""
+  state: >
+    Memory opens. Warm grows out of K1 across the whole floor, cold retreats
+    to the back wall. L132 floods LX1, BOOM SR (L156 chocolate) joins to make
+    the edge of an old photograph. LX2's L201 is not lifted and not re-gelled —
+    it sits at 55% as a cold base under the warmth. Overall the picture gets
+    brighter: memory is always brighter than the present.
+  lanterns: "201-206 (L132) @70%, 301-304 (L201) @55%, 601-603 (L156) @40%"
+  fade: "X-fade 12s"
+  notes: >
+    The single most important cue in the play. Twelve seconds is deliberate:
+    the audience must not notice the colour change until the line is half gone.
+    Do NOT swap gels in LX2. L201 is the cold of the present; the memory wins
+    by growing over it, not by replacing it. A gel change would turn the
+    memory into a different room instead of a different way of seeing this one.
+
+- q: "5"
+  act: "A1 / 1"
+  cue_point: "Happy: \"Biff, goddamnit, you son-of-a-bitch!\" — the brothers wake in the bedroom."
+  state: >
+    Memory cut off, hard back to the present. The whole stage snaps cold and
+    one stop darker. The bedroom (rear of K2) stands up on 301-304 plus
+    401-404, just enough to read two figures.
+  lanterns: "301-304 (L201) @40%, 401-404 (OPEN) @30%"
+  fade: "0s (snap)"
+  notes: >
+    One of the only two snaps allowed in the play. Memory to present must be
+    a fall, not a fade. Operating: take the LX1 master to zero first, then
+    bring LX2/LX3 in on the line.
+
+- q: "6"
+  act: "A1 / 1"
+  cue_point: "Ben appears for the first time (in Willy's memory): \"William, when I walked into the jungle, I was seventeen.\""
+  state: >
+    K1 lights locally, only the patch Ben stands in. Movers 701 and 702 throw
+    a very tight white from above and behind his shoulder; hard edge, no soft
+    spill. Everything else dark.
+  lanterns: "701-702 (OPEN) @60% tight, 201 (L132) @25%"
+  fade: "Up 5s"
+  notes: >
+    Ben's light must come from above and must exist only on him. He is a
+    thing in Willy's head and should not carry any light that belongs to a room.
+
+- q: "7"
+  act: "A1 / 1"
+  cue_point: "Ben on the timber in Alaska: \"...by God, I was rich.\""
+  state: >
+    Memory at its hottest. Warm across the floor plus strong side light;
+    L156 pushes in from SR, L119 answers from SL for contrast, the two men's
+    shadows stretch long. Brightest picture of the first act.
+  lanterns: "201-206 (L132) @85%, 601-603 (L156) @65%, 501-503 (L119) @45%"
+  fade: "Up 8s"
+  notes: >
+    Bright enough to be uncomfortable. This over-exposed white is what
+    success looks like inside Willy's head.
+
+- q: "8"
+  act: "A1 / 1"
+  cue_point: "Linda appears again; Willy alone in the kitchen: \"Willy, dear, you didn't go to Boston?\""
+  state: >
+    All memory light out. Only one low-angle warm in K1 and practical 902.
+    The first \"one lamp, one person\" picture of the play; it will come back.
+  lanterns: "902 (L103) @70%, 201 (L132) @20%"
+  fade: "X-fade 10s"
+  notes: >
+    From brightest to darkest in ten seconds. Do not stop anywhere in the
+    middle — a mid-level would read as a scene change instead of a collapse.
+
+- q: "9"
+  act: "A1 / 2"
+  cue_point: "Biff in the bedroom, after the silence that follows \"Willy Loman is dead.\""
+  state: >
+    Bedroom two-hander on cold, with a cold wash from LX3 over K2 so the bed
+    reads as a slab floating in the dark.
+  lanterns: "301-304 (L201) @38%, 401-404 (OPEN) @32%"
+  fade: "Up 4s"
+  notes: >
+    Keep this cold identical all act. Do not re-trim the colour — let the
+    audience learn this temperature.
+
+- q: "10"
+  act: "A1 / end"
+  cue_point: "Biff: \"Dad... Dad, I'm here.\" — last picture of Act 1."
+  state: >
+    F1-F2 hold only a rim; Biff downstage with everything behind him dark.
+    We see his outline, not his face.
+  lanterns: "101-102 (L201) @22%"
+  fade: "Down 9s"
+  notes: >
+    No blackout at the interval. Carry a thin wash straight through — the
+    audience will not applaud at once, which is the point.
+
+# ------------------------------------------------------------ ACT 2
+- q: "11"
+  act: "A2 / 1"
+  cue_point: "The restaurant. Stanley wipes a table; Happy pushes Biff into a chair."
+  state: >
+    Neutral, slightly cold top light. The only picture in the play with no
+    colour bias at all — the restaurant belongs to none of Willy's worlds.
+    101-106 and 301-304 run white.
+  lanterns: "101-106 (L201) @55%, 301-304 (L201) @50%"
+  fade: "Up 5s"
+  notes: >
+    Deliberately flat. Every warm/cold contrast built so far is withdrawn,
+    so the audience loses its bearings for the first time.
+
+- q: "12"
+  act: "A2 / 1"
+  cue_point: "Willy flashes back again: the Boston hotel room, The Woman laughing \"...my God, you're a big man.\""
+  state: >
+    Warm returns, but this time it is dirty warm — L156 leading with L119
+    blue mixed through it, a stop down in level. Deliberate contrast against
+    the clean warmth of Act 1.
+  lanterns: "601-603 (L156) @55%, 501-503 (L119) @35%, 201-203 (L132) @50%"
+  fade: "X-fade 7s"
+  notes: >
+    Same gel, two different jobs. In Act 1 L156 is childhood; here L156 is
+    concealment. The audience should not be able to say what is wrong, only
+    that something is.
+
+- q: "13"
+  act: "A2 / 1"
+  cue_point: "Biff knocks: \"Dad, are you in there?\" — The Woman goes into the bathroom."
+  state: >
+    Warm drains out instantly, leaving one cold shaft through the door gap
+    (401-404, one side only). Willy stands in the dark with a single line
+    of light on him.
+  lanterns: "401 (OPEN) @45% one side, 601-603 (L156) @8%"
+  fade: "Down 3s"
+  notes: >
+    Key technical move of the play: no gel moves, only intensity. The colour
+    appears to be pulled out of the picture; in fact the level has dropped.
+
+- q: "14"
+  act: "A2 / 2"
+  cue_point: "Back in the restaurant, Willy alone: \"I'm alone. He's gone.\""
+  state: >
+    Only a small warm pool on the table (902 moved on stage) with a wide
+    cold field behind it. Second \"one lamp, one person\" picture, more
+    isolated than the first.
+  lanterns: "902 (L103) @55%, 401-404 (OPEN) @25%, 802 (OPEN) @35% narrow"
+  fade: "Down 8s"
+  notes: >
+    Make the stage look bigger than it is. When a man is alone the light
+    must close in, not open up.
+
+- q: "15"
+  act: "A2 / 2"
+  cue_point: "Willy in the yard with the seeds: \"I've got to get some seeds. I've got to get some seeds, right now.\""
+  state: >
+    Darkest point of the play. Only low side light from the booms skimming
+    the floor, so his half-kneeling shadow runs the full width of the stage.
+    Back wall completely out.
+  lanterns: "501-503 (L119) @30% low, 901 (OPEN) @15%"
+  fade: "Down 6s"
+  notes: >
+    Side light pressed almost horizontal — that is what makes the shadow
+    crawl. The back wall goes out so the space has no edge: he is nowhere.
+
+- q: "16"
+  act: "A2 / 2"
+  cue_point: "Ben's last appearance: \"The boat... the boat is waiting, William.\""
+  state: >
+    Ben is again a tight white shaft (701-702) but brighter and closer,
+    and warmth begins to appear on Willy at the same time — he is already
+    getting ready to go with him.
+  lanterns: "701-702 (OPEN) @75%, 201-204 (L132) @40%"
+  fade: "Up 6s"
+  notes: >
+    The only moment in the play where Ben's white and the memory's warm are
+    on stage together. The audience should realise here what he is about to do.
+
+- q: "17"
+  act: "A2 / 2"
+  cue_point: "Sound of the car starting (sound cue) — Willy drives away."
+  state: >
+    All light pulled at once, leaving only a very narrow cold edge on the
+    back wall for three seconds, then that goes too. Total black.
+  lanterns: "401-404 (OPEN) @10%"
+  fade: "Down 0s, then 3s afterglow"
+  notes: >
+    Hard sync to the sound cue. The three-second afterglow is not a design
+    choice — it gives the audience's eyes time to adjust, otherwise people
+    stand up in the dark.
+
+- q: "18"
+  act: "A2 / requiem"
+  cue_point: "Requiem. Linda: \"I made the last payment on the house today.\""
+  state: >
+    The first and only natural light of the play: cold white coming from the
+    direction of the back wall, no gel bias, almost no directional contrast.
+    Four people standing in light with barely any shadow.
+  lanterns: "401-404 (OPEN) @40%, 101-106 (L201) @35%, 801 (OPEN) @30% on Linda, 802 (OPEN) @30% on Biff"
+  fade: "Up 12s"
+  notes: >
+    Slowest up in the play. The only picture that is not \"designed\" — after a
+    death light is just light and stops carrying feeling. Twelve seconds lets
+    the audience arrive at that themselves. Both followspots open up to full
+    and soften off, in contrast to every tight shaft before: nobody has to be
+    held any more.
+
+- q: "19"
+  act: "A2 / curtain"
+  cue_point: "Linda: \"We're free and clear.\" — end of play."
+  state: >
+    Hold the picture five seconds, then slowly take it down to a single line
+    on the back wall, then out. No blackout; leave 1% of edge light for the call.
+  lanterns: "401-404 (OPEN) @12%"
+  fade: "Down 15s"
+  notes: >
+    Do not blackout. Let the applause start while there is still a little
+    light in the room — going cleanly to black cuts the feeling off.

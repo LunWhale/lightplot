@@ -1,0 +1,72 @@
+# ============================================================
+# 300-WORD RATIONALE — director's concept
+#
+# HSC Drama Design (Lighting) 硬性要求：
+#   · 必须随作品提交，放在封面页之后、作品本体之前
+#   · 300 词，**上限 300**，超出的部分 NESA 直接忽略
+#   · 写成 director's concept（导演概念），不是"我想怎么做灯"的心得
+#   · 不打分，但考官参照它确认创作意图 —— 写得含混，概念分会被拉低
+#
+# DoE 官方给的四段式：
+#   1. 一句话点明整体意图 / 概念
+#   2. 你探索的关键瞬间、想法、意象、手法、风格惯例
+#   3. 你调度了哪些戏剧/设计元素，它们如何制造戏剧意义
+#   4. 对预期观众反应的反思
+#
+# ★ 校验器（src/rationale.py）会：
+#   · 数词数，超过 300 就报错（不是警告）
+#   · 检查四个部分是否都在
+#   · 检查有没有出现"lighting plot""DMX""luminaire"这类技术词 ——
+#     rationale 讲的是**导演愿景**，不是技术清单
+#
+# ★ 写成段落，不要写成条目。考官读的是散文，不是 bullet list。
+# ============================================================
+
+meta:
+  playwright: "Arthur Miller"
+  play: "Death of a Salesman"
+  form: "director's concept"
+  target_words: 300
+  hard_max: 300
+
+# 四个部分分开写，生成时按顺序连成一篇。分开写是为了让校验器能检查完整性。
+parts:
+
+- id: intent
+  label: "整体意图（一句话）"
+  text: >
+    I want to stage Death of a Salesman as a play about a man who cannot tell
+    being remembered from being loved.
+
+- id: moments
+  label: "关键瞬间 / 意象 / 手法"
+  text: >
+    The production turns on one repeated image: a single lamp and one person
+    alone under it. It appears three times — Willy in the kitchen, in the
+    restaurant, in the yard with his seeds — and each time the pool of light is
+    smaller. The language is deliberately plain: warm light means somebody is
+    being looked after, cold light means somebody is alone. There are no
+    effects. The whole production is that rule being applied, bent, and broken.
+
+- id: elements
+  label: "戏剧元素与设计元素如何制造意义"
+  text: >
+    My two scenes are the kitchen at night and the Boston hotel room, because
+    they show the same man in the two lights he lives by. The kitchen is cold
+    and thin, lit from above like a room nobody has warmed; the hotel is
+    over-warm, amber to the point of being untrue, because it is the version
+    Willy remembers rather than the one that happened. Both use the same rig and
+    positions. The contrast is made entirely by gel, angle and intensity, so the
+    audience reads it as a change inside Willy rather than a change of set. When
+    Biff knocks and the amber drains out in three seconds, no colour is
+    physically removed — the level simply drops — but the room goes cold, and
+    that is where the play turns.
+
+- id: audience
+  label: "预期观众反应"
+  text: >
+    I want the audience to notice, about forty minutes in, that they have been
+    reading warmth as safety without being told to. Once they have, the final
+    image can take it away: in the requiem the light is neither warm nor cold.
+    It is simply light. If they feel the loss of something they had only just
+    learned to name, the design has done its job.

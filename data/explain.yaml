@@ -1,0 +1,216 @@
+# ============================================================
+# PLAIN-LANGUAGE GUIDE — 讲图纸和舞台，不讲工作流
+#
+# 读者：完全没进过剧场后台的人（小学生也能读）
+# 目的：让他看懂**这张图在说什么**，以及舞台上那些东西是什么
+#
+# ★ 写作规则
+#   1. 不用行话。必须用时紧跟括号解释。
+#   2. 每条都回答"所以你看到的是什么"。
+#   3. 讲图纸上的符号，讲舞台的方位，讲光怎么工作。
+#   4. 不讲软件、不讲工作流、不讲代码。
+#
+# ★ figure 字段
+#   每节可以带一张图：从**当前出图**里裁一块放大插进来。
+#   坐标是 DXF 图纸毫米（原点左下）。这样讲解和图纸永远对得上 ——
+#   改图之后插图自动跟着变，不会出现"讲的和画的不一致"。
+# ============================================================
+
+meta:
+  title: "HOW TO READ THIS DRAWING"
+  subtitle: "Everything on these sheets, explained for someone who has never been backstage"
+  audience: "No theatre experience needed. If you can read a map, you can read this."
+
+sections:
+
+- id: lookingdown
+  heading: "First: you are looking straight down"
+  figure: plan
+  body: >
+    This is a floor plan. Imagine the theatre has no roof and you are a bird
+    flying over it, looking straight down. Everything you see is what the bird
+    sees: the stage floor, the furniture on it, and the lights hanging above it
+    all drawn as if they were flat on the ground.
+  detail: >
+    That last part is the trick. The lights are actually eight metres up in the
+    air, but on the drawing they sit right on top of the stage. A floor plan
+    flattens everything onto one sheet of paper. If you remember only one thing
+    from this page, remember that.
+
+- id: directions
+  heading: "The four words for directions"
+  body: >
+    Theatres do not use north and south. They use four words that sound strange
+    until you know where they come from.
+  items:
+    - term: "UPSTAGE"
+      plain: >
+        The back of the stage, furthest from the audience. It is called "up"
+        because stages used to be built on a slope, tilted towards the audience,
+        so the back really was higher up.
+    - term: "DOWNSTAGE"
+      plain: >
+        The front of the stage, closest to the audience. Down the slope.
+    - term: "STAGE LEFT and STAGE RIGHT"
+      plain: >
+        These are the actor's left and right, not yours. If you are sitting in
+        the audience, stage left is on your right. This confuses everybody at
+        first. It is worth getting right, because every note anyone ever gives
+        you will use these words.
+    - term: "THE GRID"
+      plain: >
+        The metal ceiling above the stage. Almost every light in this show hangs
+        from it. When somebody says a light is "at eight metres", they mean eight
+        metres above the stage floor, hanging from the grid.
+
+- id: thebars
+  heading: "The bars the lights hang from"
+  figure: truss
+  body: >
+    Lights do not float. They hang from metal bars, and there are two kinds in
+    this show. You can tell them apart on the drawing by their shape.
+  items:
+    - term: "A TRUSS (the zig-zag one)"
+      plain: >
+        Two long parallel bars with a zig-zag of shorter bars between them,
+        like a ladder lying on its side. It is strong and light, so it can span
+        the whole width of a stage without sagging. On the plan it looks like a
+        long strip of triangles. All three of the main rows above the stage are
+        trusses.
+    - term: "A PIPE (the plain long box)"
+      plain: >
+        Just a plain hollow rectangle. Nothing inside it. Pipes are used for
+        lighter jobs and for the bars at the sides. If you see a long empty
+        rectangle on the plan, that is a pipe, not a truss.
+    - term: "A BOOM"
+      plain: >
+        A pipe standing upright at the side of the stage, like a lamppost.
+        Lights clamped to a boom shine sideways across the stage, which makes
+        long shadows and carves people out of the background. This show uses two,
+        one on each side.
+
+- id: symbols
+  heading: "What the little shapes mean"
+  figure: fixture
+  body: >
+    Every light has a small drawing of its own shape, plus two pieces of text
+    beside it. Once you know the three parts you can read any light on the sheet.
+  items:
+    - term: "The outline"
+      plain: >
+        That is the actual shape of the light, seen from above. The wide end is
+        the front, where the light comes out. It points at whatever the light is
+        aimed at, so you can tell at a glance which way each one is facing.
+    - term: "The circle with a number in it"
+      plain: >
+        This is the light's number on the control desk. When the operator wants
+        to change that light, they type this number. The circle is drawn solid
+        white so it stays readable even when it sits on top of a truss.
+    - term: "The L-number, like L201"
+      plain: >
+        That is the colour. "L" means Lee, a company that makes the coloured
+        plastic sheets that go in front of the light. L201 is a pale blue.
+        The number underneath is the light's own name, so you can find the same
+        light on the other sheets.
+    - term: "OPEN"
+      plain: >
+        No colour at all. Just the bare bulb. Used where you want the light to
+        look like ordinary white light, or where the light can make its own
+        colours electronically.
+
+- id: colour
+  heading: "How colour changes what you feel"
+  body: >
+    A gel is a thin sheet of coloured plastic, about as thick as a page from a
+    magazine, that clips in front of the lamp. It costs almost nothing and it
+    does more work than any other piece of equipment in the theatre.
+  detail: >
+    Pale blue on a face makes it look tired, cold, or far away. Pale amber makes
+    the same face look healthy and warm. Put both on the same actor from
+    different directions and the audience reads "half of him is here, half of
+    him is somewhere else" without being told anything. That is the single most
+    useful trick in this whole design, and it is repeated in almost every scene.
+
+- id: angle
+  heading: "Where the light comes from matters more than how bright it is"
+  body: >
+    A face lit from straight in front looks flat and slightly false — like a
+    passport photo. Move the same light to the side and the face gets a bright
+    side and a dark side, and suddenly it has shape and mood.
+  items:
+    - term: "Front light"
+      plain: >
+        Comes from the audience side. Safe, flattering, boring. Used here when
+        somebody needs to be clearly seen, like Linda in the kitchen.
+    - term: "Side light"
+      plain: >
+        Comes from the wings. Makes strong shadows and makes people look like
+        they are standing in a doorway. Used when somebody is isolated.
+    - term: "Top light"
+      plain: >
+        Comes straight down. Puts the eyes in shadow. Used sparingly, because it
+        makes people look haunted — which is exactly why it appears in the
+        scenes where Willy is losing his grip.
+
+- id: section
+  heading: "The other sheet: looking from the side"
+  figure: section
+  body: >
+    The floor plan shows you the stage from above. The second sheet shows the
+    same stage from the side, as if the audience wall had been taken away and
+    you were standing in the wings looking across.
+  detail: >
+    This is the sheet that tells you how high everything is. On the plan, three
+    trusses look like three identical lines. From the side you can see they are
+    all at different heights, and you can see the shape of the light beams
+    coming down off them and where those beams land on the floor. The fan-shaped
+    lines are the beams. Where a beam stops is where that light is focused.
+
+- id: cues
+  heading: "What a cue is, and why the numbers matter"
+  body: >
+    A cue is a single moment where the light changes. The show has twenty of
+    them. Each one has a number, and that number appears on three different
+    pieces of paper.
+  items:
+    - term: "On the cue sheet"
+      plain: >
+        A list, in order, of every change: what number it is, what happens, which
+        lights are involved, and how long the change takes. This is the page the
+        operator works from during the show.
+    - term: "On the running script"
+      plain: >
+        The same numbers, but written next to the line of the play that triggers
+        them. This is the page the stage manager works from. They read along in
+        the script and when they reach the marked line they say "go".
+    - term: "On the plan"
+      plain: >
+        The light numbers, so you can find which physical light a cue is talking
+        about.
+  detail: >
+    The reason all three must agree is simple: during a show it is dark, everyone
+    is nervous, and nobody has time to work out that cue seven on one sheet is
+    cue six on another. If the numbers do not match, the show goes wrong in front
+    of an audience.
+
+- id: honesty
+  heading: "What is not finished"
+  body: >
+    Every real design has things still to be sorted out. Here is the honest list.
+  items:
+    - term: "The theatre is made up"
+      plain: >
+        The stage size and the height of the bars in this design were invented,
+        not measured. Before anybody builds or hangs anything, someone has to go
+        into the actual theatre with a tape measure and correct those numbers.
+    - term: "The cues have not been checked against the real script"
+      plain: >
+        The cue points follow the play, but nobody has yet sat down with the
+        exact edition being performed and confirmed every cue lands on the right
+        line. The running script sheet is set up to do that job and is currently
+        a placeholder.
+    - term: "The beam angles are typical, not measured"
+      plain: >
+        The widths of the light beams are normal values for these kinds of
+        light. Whatever is actually in the school's store cupboard will be
+        different, and will need adjusting.

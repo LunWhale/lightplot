@@ -1,0 +1,146 @@
+# ============================================================
+# RUNNING SCRIPT — cue map / prompt copy
+#
+# ⚠ 这个文件是**空壳模板**，不是剧本。
+#   剧本有版权，工作流不分发剧本正文。
+#   你要做的是：把**你自己的**演出本按下面的格式填进来。
+#
+# 为什么必须自己填
+# ----------------
+# HSC 的 Running Script（也叫 prompt copy / 提示本）是给舞台监督
+# 在现场"叫 cue"用的：剧本正文在左边，cue 号标在右边，
+# 舞台监督念到那一句就喊 Go。
+# 所以它必须和**你实际演的版本**逐字对应 —— 删过的台词不能留着，
+# 改过的顺序不能照原版。任何模板都不可能替你做这件事。
+#
+# 填法
+# ----
+# 每个 beat 是一行：
+#   - act:  "A1 / 1"         幕/场，跟 cues.yaml 的 act 对齐
+#     who:  "WILLY"          说话人；舞台提示写 STAGE
+#     line: "台词或动作"      一句话就够，不用整段
+#     cue:  "3"              这一行之后触发哪个 cue（可省略）
+#     cue_after: true        true = 念完这句才走 cue（默认）
+#                            false = 这句**开始前**走 cue
+#
+# 校验器会检查：
+#   · 每个 cue 在 running script 里出现且只出现一次
+#   · running script 里的 cue 号必须在 cues.yaml 里存在
+#   · cue 顺序必须和 cues.yaml 一致
+# 对不上就拒绝出图 —— 这就是任务书要求的"两份文件编号必须对应"。
+# ============================================================
+
+meta:
+  # 剧本版本信息。排练时填，会印在 running script 页眉上。
+  edition: ""
+  isbn: ""
+  # 学生/设计者姓名，印在每页页脚
+  designer: "Brooks Li"
+
+beats:
+
+# ---------------------------------------------------------- ACT 1
+# ↓↓↓ 把这里换成你的剧本。下面是格式示例（不是剧本原文）↓↓↓
+
+- act: "A1 / pre-show"
+  who: "STAGE"
+  line: "House open. Preset standing by."
+  cue: "0.5"
+  cue_after: false
+
+- act: "A1 / 1"
+  who: "STAGE"
+  line: "Willy enters through the back door with two sample cases."
+  cue: "1"
+
+- act: "A1 / 1"
+  who: "LINDA"
+  line: "(switching on the kitchen light) Willy! It's all right, I'll go down—"
+  cue: "2"
+
+- act: "A1 / 1"
+  who: "WILLY"
+  line: "I'm tired to the death."
+  cue: "3"
+
+- act: "A1 / 1"
+  who: "WILLY"
+  line: "Biff Loman is lost. In the greatest country in the world a young man with such personal attractiveness gets lost."
+  cue: "4"
+
+- act: "A1 / 1"
+  who: "HAPPY"
+  line: "Biff, goddamnit, you son-of-a-bitch!"
+  cue: "5"
+
+- act: "A1 / 1"
+  who: "BEN"
+  line: "William, when I walked into the jungle, I was seventeen."
+  cue: "6"
+
+- act: "A1 / 1"
+  who: "BEN"
+  line: "...by God, I was rich."
+  cue: "7"
+
+- act: "A1 / 1"
+  who: "LINDA"
+  line: "Willy, dear, you didn't go to Boston?"
+  cue: "8"
+
+- act: "A1 / 2"
+  who: "STAGE"
+  line: "Silence after 'Willy Loman is dead.' Biff alone in the bedroom."
+  cue: "9"
+
+- act: "A1 / end"
+  who: "BIFF"
+  line: "Dad... Dad, I'm here."
+  cue: "10"
+
+# ---------------------------------------------------------- ACT 2
+
+- act: "A2 / 1"
+  who: "STAGE"
+  line: "The restaurant. Stanley wipes a table; Happy pushes Biff into a chair."
+  cue: "11"
+
+- act: "A2 / 1"
+  who: "THE WOMAN"
+  line: "(laughing) ...my God, you're a big man."
+  cue: "12"
+
+- act: "A2 / 1"
+  who: "BIFF"
+  line: "(knocking) Dad, are you in there?"
+  cue: "13"
+
+- act: "A2 / 2"
+  who: "WILLY"
+  line: "I'm alone. He's gone."
+  cue: "14"
+
+- act: "A2 / 2"
+  who: "WILLY"
+  line: "I've got to get some seeds. I've got to get some seeds, right now."
+  cue: "15"
+
+- act: "A2 / 2"
+  who: "BEN"
+  line: "The boat... the boat is waiting, William."
+  cue: "16"
+
+- act: "A2 / 2"
+  who: "STAGE"
+  line: "Sound of a car starting offstage."
+  cue: "17"
+
+- act: "A2 / requiem"
+  who: "LINDA"
+  line: "I made the last payment on the house today."
+  cue: "18"
+
+- act: "A2 / curtain"
+  who: "LINDA"
+  line: "We're free and clear."
+  cue: "19"
