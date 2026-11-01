@@ -3,12 +3,12 @@ import Foundation
 public enum LightPlotVersion {
     /// 语义化版本。
     ///
-    /// **打包成 .app 之后要读 bundle 里的版本**，否则发布版 1.0.0
-    /// 的 PDF 元数据里还写着 0.1.0 —— 用户看"关于"和看文件属性会对不上。
+    /// **打包成 .app 之后要读 bundle 里的版本**，否则发布版的
+    /// PDF 元数据里还写着这个兜底值 —— 用户看"关于"和看文件属性会对不上。
     /// 命令行工具（`lpx`）没有 bundle，退回这里的常量。
     ///
     /// 构建号固定 "dev"：**不允许写时间戳**，摘要与产物必须可字节级回归。
-    public static let fallback = "1.0.0"
+    public static let fallback = "0.001"
     public static let build = "dev"
 
     public static var string: String { bundleVersion ?? fallback }

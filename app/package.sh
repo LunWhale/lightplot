@@ -8,7 +8,7 @@
 #
 #  产物在 dist/：
 #     LightPlot.app             可直接拖进"应用程序"
-#     LightPlot-1.0.0.dmg       带 /Applications 快捷方式的安装镜像
+#     LightPlot-0.001.dmg       带 /Applications 快捷方式的安装镜像
 #
 #  签名说明（重要）：
 #     本机没有 Apple 开发者证书，所以用 **ad-hoc 签名**。

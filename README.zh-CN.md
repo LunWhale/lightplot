@@ -87,7 +87,7 @@ cd app
 ./run.sh                # 校验数据 → 出全套图 → 与参考 PDF 比对
 ./run.sh --check        # 只校验
 ./run.sh --app          # 编译并打开图形界面
-./package.sh            # 产出 dist/LightPlot.app 与 dist/LightPlot-1.0.0.dmg
+./package.sh            # 产出 dist/LightPlot.app 与 dist/LightPlot-0.001.dmg
 swift test              # 415 个测试
 ```
 

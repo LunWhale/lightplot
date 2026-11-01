@@ -9,7 +9,7 @@
 ## 打包成 .app / .dmg
 
 ```bash
-./package.sh              # 出 dist/LightPlot.app + dist/LightPlot-1.0.0.dmg
+./package.sh              # 出 dist/LightPlot.app + dist/LightPlot-0.001.dmg
 ./package.sh --no-dmg     # 只出 .app
 ```
 
@@ -20,7 +20,7 @@
 
 ```
 dist/LightPlot.app            10M
-dist/LightPlot-1.0.0.dmg     3.1M    SHA-256 一并打印
+dist/LightPlot-0.001.dmg     3.1M    SHA-256 一并打印
 ```
 
 **签名状态（重要）**：本机没有 Apple 开发者证书，所以是 **ad-hoc 签名**。

@@ -88,7 +88,7 @@ cd app
 ./run.sh                # validate data → render everything → compare against the reference PDFs
 ./run.sh --check        # validate only
 ./run.sh --app          # build and launch the GUI
-./package.sh            # produce dist/LightPlot.app + dist/LightPlot-1.0.0.dmg
+./package.sh            # produce dist/LightPlot.app + dist/LightPlot-0.001.dmg
 swift test              # 415 tests
 ```
 
